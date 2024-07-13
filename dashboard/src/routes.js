@@ -65,7 +65,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "AI Chatbot Assistant",
+    name: "tbot Assistant",
     key: "chatbot",
     icon: <Icon fontSize="small">VR training</Icon>,
     route: "/chatbot",
