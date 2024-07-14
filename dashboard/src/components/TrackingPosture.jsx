@@ -35,7 +35,7 @@ const TrackingPosture = () => {
       </h1>
       
       
-        <iframe className="mx-auto w-screen h-screen" src="https://www.spatial.io/s/D-THERAPY-6330bcf80d30ed0001227c6a?share=5558765375096783739" frameborder="0"></iframe>
+        <iframe className="mx-auto w-screen h-screen" src="https://www.spatial.io/s/MYNTRA-at-your-HOME-667fe0c033de2d78156e49d0?utm_source=space_invite&utm_medium=email" frameborder="0"></iframe>
       
     </div>
     
