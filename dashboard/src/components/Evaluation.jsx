@@ -1,84 +1,60 @@
-import React, { useState } from 'react';
+import React from "react";
 
-const Evaluation = ({ questions, options, correctAnswers }) => {
-  const [userResponses, setUserResponses] = useState(Array(questions.length).fill(null));
-  const [showResult, setShowResult] = useState(false);
+import image1 from '../assets/Screenshot 2024-07-11 131845.png'
+import image2 from '../assets/Screenshot 2024-07-11 131901.png'
+import image3 from '../assets/Screenshot 2024-07-11 132048.png'
+import { Typography } from "@mui/material";
+const Arlearning = () => {
+    const scenarios = [
+        {
+            id: 1,
+            title: 'High Return Rates Due to Fit Issues',
+            image: image1,
+            description: 'Current training lacks realistic,immersive scenarios, limiting hands-on experience and preparedness for real-world situations.',
+            url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
+        },
+        {
+            id: 2,
+            title: 'Low User Engagement and Habitual Visits',
+            image: image2,
+            description: 'Myntra struggles to maintain high user engagement andfrequent visits, especially among Gen Z. In a competitivemarket, it Trend. Swipe. Shop. Repeat',
+            url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
+        },
+        {
+            id: 3,
+            title: 'Seamless and Integrated Shopping Experience',
+            image: image3,
+            description: 'Effortless Shopping, Streamlined Journey, Boosted Conversions, Precision Fit, Confidence in Choices.',
+            url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
+        },
+        // Add more scenarios as needed
+    ];
+    return (
+        <div>
+            <div>
+                <div className="bg-gray-100 p-8">
+                    <div className="text-center mb-8">
+                        <h1 className="text-4xl font-bold text-pink-600">Instagram Filters</h1>
+                    </div>
 
-  const handleAnswerSelection = (index, selectedOption) => {
-    const updatedResponses = [...userResponses];
-    updatedResponses[index] = selectedOption;
-    setUserResponses(updatedResponses);
-  };
-
-  const calculateScore = () => {
-    return userResponses.reduce((score, response, index) => {
-      return response === correctAnswers[index] ? score + 1 : score;
-    }, 0);
-  };
-
-  const showResults = () => {
-    setShowResult(true);
-  };
-
-  const resetQuiz = () => {
-    setUserResponses(Array(questions.length).fill(null));
-    setShowResult(false);
-  };
-
-  return (
-    <div>
-      <h1 className='text-blue-600 text-semibold my-10 text-3xl text-center'>Predcting the Trend</h1>
-      <div className="max-w-xl mx-auto bg-white p-6 shadow-md rounded-md mt-2">
-
-        {questions.map((question, index) => (
-          <div key={index} className="mb-6">
-            <p className="font-semibold mb-2">{question}</p>
-            <div className="space-y-2">
-              {options[index].map((option, optionIndex) => (
-                <label key={optionIndex} className="flex items-center">
-                  <input
-                    type="radio"
-                    value={`option${String.fromCharCode(65 + optionIndex)}`}
-                    checked={userResponses[index] === `option${String.fromCharCode(65 + optionIndex)}`}
-                    onChange={() => handleAnswerSelection(index, `option${String.fromCharCode(65 + optionIndex)}`)}
-                    className="mr-2"
-                  />
-                  {option}
-                </label>
-              ))}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-[0px] sm:ml-[20%]">
+                        {scenarios.map((scenario) => (
+                            <div key={scenario.id} className="bg-white p-6 rounded-lg shadow-md">
+                                <img src={scenario.image} alt={scenario.title} className="w-full h-48 object-cover mb-4 rounded-md" />
+                                <h2 className="text-xl font-semibold mb-2">{scenario.title}</h2>
+                                <Typography component="a" href={scenario.url} target="_blank" rel="noopener noreferrer" sx={{ display: "block", color: "blue", wordWrap: "break-word", mb: 2 }}>
+                                        {scenario.url}
+                              </Typography>
+                                <p className="text-gray-600">{scenario.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
-          </div>
-        ))}
-
-        {showResult ? (
-          <div>
-            <p className="font-semibold mb-4">Your Score: {calculateScore()} out of {questions.length}</p>
-            <ul className="list-disc ml-6">
-              {userResponses.map((response, index) => (
-                <li key={index} className="mb-2">
-                  <strong>Question {index + 1}:</strong> Your Answer: {response}, Correct Answer: {correctAnswers[index]}
-                </li>
-              ))}
-            </ul>
-            <button
-              onClick={resetQuiz}
-              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none"
-            >
-              Try Again
-            </button>
-          </div>
-        ) : (
-          <button
-            onClick={showResults}
-            className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none"
-          >
-            Submit
-          </button>
-        )}
-      </div>
-    </div>
-
-  );
+            
+        </div>
+    )
+        ;
 };
 
-export default Evaluation;
+export default Arlearning;

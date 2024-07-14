@@ -41,11 +41,11 @@ const routes = [
   // },
   {
     type: "collapse",
-    name: "GEN'Z data",
+    name: "#Accessorize",
     key: "billing",
     icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/billing",
-    component: <Billing />,
+    route: "/accessorize",
+    component: <Evaluation />,
   },
   // {
   //   type: "collapse",
