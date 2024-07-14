@@ -7,6 +7,7 @@ import geig from "../assets/dior_bolso_saddle_con_bandolera_rojo.glb"
 import image1 from '../assets/Screenshot 2024-07-11 131845.png'
 import image2 from '../assets/Screenshot 2024-07-11 131901.png'
 import image3 from '../assets/Screenshot 2024-07-11 132048.png'
+import { Typography } from "@mui/material";
 const Arlearning = () => {
     const scenarios = [
         {
@@ -49,14 +50,14 @@ const Arlearning = () => {
                 </div>
             </div>
             <div className=" md:ml-[20%]">
-                <h1 className="mt-5 text-2xl text-center">
-                    AR TRY ONS Visualization
+                <h1 className="mt-5 text-3xl text-center font-bold">
+                    <Typography variant="bold">AR TRY ONS Visualization</Typography>
                 </h1>
-                <div className='flex md:flex-row flex-col flex-wrap'>
+                <div className='flex md:flex-row flex-col flex-wrap '>
 
-                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[800px]" data-aos="fade-up" date-aos-delay="200">
+                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px] rounded-lg" data-aos="fade-up" date-aos-delay="200">
                         <div className="row text-base">
-                            <div className="flex flex-col ">
+                            <div className="flex flex-col rounded-full ">
                                 <div className="icon-box">
                                     <h4 className=" font-bold tracking-widest text-lg mt-10 mb-5">RARE BLUE HOT DRESS</h4>
                                     <p className="description bg-zinc-700 text-white  rounded-lg p-4"> RARE
@@ -99,7 +100,7 @@ const Arlearning = () => {
 
                         </div>
                     </section>
-                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px]" data-aos="fade-up" date-aos-delay="200">
+                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px] rounded-lg" data-aos="fade-up" date-aos-delay="200">
                         <div className="row">
                             <div className="col-lg-6 d-flex flex-column text-base justify-content-center p-5">
                                 <div className="icon-box">
@@ -138,7 +139,7 @@ const Arlearning = () => {
                             </div>
                         </div>
                     </section>
-                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px]" data-aos="fade-up" data-aos-delay="200">
+                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px] rounded-lg" data-aos="fade-up" data-aos-delay="200">
                         <div className="row">
                             <div className="col-lg-6 d-flex flex-column text-base justify-content-center p-5">
                                 <div className="icon-box">
@@ -174,7 +175,7 @@ const Arlearning = () => {
                             </div>
                         </div>
                     </section>
-                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px]" data-aos="fade-up" data-aos-delay="200">
+                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px] rounded-lg" data-aos="fade-up" data-aos-delay="200">
                         <div className="row">
                             <div className="col-lg-6 d-flex flex-column text-base justify-content-center p-5">
                                 <div className="icon-box">
@@ -214,7 +215,7 @@ const Arlearning = () => {
                         </div>
                     </section>
 
-                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px]" data-aos="fade-up" data-aos-delay="200">
+                    <section className="container max-w-lg bg-slate-600 m-5 px-10 h-[1000px] rounded-lg" data-aos="fade-up" data-aos-delay="200">
                         <div className="row">
                             <div className="col-lg-6 d-flex flex-column text-base justify-content-center p-5">
                                 <div className="icon-box">

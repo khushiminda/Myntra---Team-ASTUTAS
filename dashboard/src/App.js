@@ -88,7 +88,7 @@ export default function App() {
       alignItems="center"
       width="3.25rem"
       height="3.25rem"
-      bgColor="white"
+      bgColor=""
       shadow="sm"
       borderRadius="50%"
       position="fixed"

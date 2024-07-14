@@ -57,7 +57,7 @@ const routes = [
   // },
   {
     type: "collapse",
-    name: "Evaluation",
+    name: "#SwipetoStyle",
     key: "evaluation",
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/evaluation",
@@ -65,7 +65,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "tbot Assistant",
+    name: "#StyleGenie",
     key: "chatbot",
     icon: <Icon fontSize="small">VR training</Icon>,
     route: "/chatbot",
@@ -73,7 +73,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "AR Try Ons",
+    name: "#PerfectlyYou",
     key: "arlearning",
     icon: <Icon fontSize="small">VR training</Icon>,
     route: "/arlearning",
@@ -90,7 +90,7 @@ const routes = [
 
   {
     type: "collapse",
-    name: "Virtual World",
+    name: "#ShopLiveNow",
     key: "virtualtryon",
     icon: <Icon fontSize="small">VR</Icon>,
     route: "/TryOn",
