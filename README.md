@@ -8,15 +8,15 @@ To clone and run this project locally, follow these steps:
 
 Install Dependencies: Ensure you have Node.js and npm installed. Run the following command to install the required dependencies:
 
-npm install
+    npm install
 
 Start the Development Server: To start the development server and view the application locally, use:
 
-npm start
+    npm start
 
 Build for Production: To create a production build of the application, run:
 
-npm run build
+    npm run build
 
 
 
