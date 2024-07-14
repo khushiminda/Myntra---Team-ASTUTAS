@@ -50,15 +50,16 @@ const routes = [
     key: "virtualtryon",
     icon: <Icon fontSize="small">VR</Icon>,
     route: "/TryOn",
-    component: <TrackingPosture />,
+    
   },
  
   {
     type: "collapse",
     name: "#SwipetoStyle",
-    key: "",
+    key: "SwipeableVideos",
     icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/",
+    route: "/reels",
+    component: <TrackingPosture />
     
   },
   {

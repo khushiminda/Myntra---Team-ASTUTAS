@@ -1,45 +1,111 @@
-import React from "react";
+import React from 'react';
+import SwipeableViews from 'react-swipeable-views';
+import { bindKeyboard } from 'react-swipeable-views-utils';
+import { Button, Box, Typography } from '@mui/material';
 
-const TrackingPosture = () => {
-  // Replace 'YOUR_TRACKING_APP_URL' with the actual URL of your posture tracking application
-  const trackingAppUrl = "YOUR_TRACKING_APP_URL";
+const videos = [
+  {
+    id: 1,
+    title: 'Video 1',
+    url: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    buyLink: 'https://www.example.com/buy/video1',
+  },
+  {
+    id: 2,
+    title: 'Video 2',
+    url: 'https://www.w3schools.com/html/movie.mp4',
+    buyLink: 'https://www.example.com/buy/video2',
+  },
+  {
+    id: 3,
+    title: 'Video 3',
+    url: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    buyLink: 'https://www.example.com/buy/video3',
+  },
+];
 
+const EnhancedSwipeableViews = bindKeyboard(SwipeableViews);
+
+const SwipeableVideos = () => {
   return (
-    // <div className="ml-[20%]">
-    //   <div className=" bg-gray-100 p-8">
-    //     <div className="text-center mb-8">
-    //       <h1 className="text-4xl font-bold">Posture Tracking with OpenCV</h1>
-    //     </div>
-
-    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    //       <div className="bg-white p-6 rounded-lg shadow-md">
-    //         <a className="text-3xl " href="C:\Users\aman\Documents\Dev_Code\Sangरक्षण\openCv integration\posenet-demo-ml5js\public\PostureDetection.html">Click Here to track posture</a>
-    //       </div>
-    //       <div className="bg-white p-6 rounded-lg shadow-md">
-    //         <h2 className="text-xl font-semibold mb-2">How it Works</h2>
-    //         <p className="text-gray-600">
-    //           This page uses OpenCV for posture tracking. The embedded iframe
-    //           connects to our tracking application, which analyzes your movements
-    //           in real-time.
-    //         </p>
-    //         {/* Add more information or instructions */}
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   {/* Additional content or sections can be added here */}
-    // </div>
-
-    <div>
-      <h1 className="text-center text-4xl" > VIRTUAL TRY ONS
-      </h1>
-      
-      
-        <iframe className="mx-auto w-screen h-screen" src="https://www.spatial.io/s/MYNTRA-at-your-HOME-667fe0c033de2d78156e49d0?utm_source=space_invite&utm_medium=email" frameborder="0"></iframe>
-      
-    </div>
-    
+    <Box
+      sx={{
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'pink',
+      }}
+    >
+      <EnhancedSwipeableViews
+        axis="y"
+        resistance
+        style={{ height: '100%' }}
+        containerStyle={{ height: '100%' }}
+        slideStyle={{ height: '100%' }}
+      >
+        {videos.map((video) => (
+          <Box
+            key={video.id}
+            sx={{
+              position: 'relative',
+              height: '100%',
+              width: '60%', // Adjust width as needed
+              maxWidth: '600px', // Set a max-width for better presentation
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              overflow: 'hidden',
+              margin: 'auto',
+            }}
+          >
+            <video
+              src={video.url}
+              controls
+              autoPlay
+              loop
+              style={{
+                height: '100vh',
+                width: 'auto',
+                borderRadius: '16px',
+              }}
+            />
+            {/* <Typography
+              variant="h5"
+              sx={{
+                color: 'white',
+                position: 'absolute',
+                top: '16px',
+                left: '16px',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                padding: '8px',
+                borderRadius: '8px',
+              }}
+            >
+              {video.title}
+            </Typography> */}
+            <Button
+              variant="contained"
+              color="primary"
+              href={video.buyLink}
+              target="_blank"
+              sx={{
+                position: 'absolute',
+                bottom: '32px',
+                backgroundColor: 'rgba(255, 5, 255, 0.8)',
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 0, 0, 1)',
+                },
+              }}
+            >
+              Buy Me
+            </Button>
+          </Box>
+        ))}
+      </EnhancedSwipeableViews>
+    </Box>
   );
 };
 
-export default TrackingPosture;
+export default SwipeableVideos;
