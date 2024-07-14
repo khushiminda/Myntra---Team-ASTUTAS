@@ -1,30 +1,30 @@
 import React from "react";
 
-import image1 from '../assets/Screenshot 2024-07-11 131845.png'
-import image2 from '../assets/Screenshot 2024-07-11 131901.png'
-import image3 from '../assets/Screenshot 2024-07-11 132048.png'
+import image1 from '../assets/WhatsApp Image 2024-07-14 at 18.08.36.jpeg'
+import image2 from '../assets/WhatsApp Image 2024-07-14 at 19.27.16.jpeg'
+import image3 from '../assets/WhatsApp Image 2024-07-14 at 21.39.50.jpeg'
 import { Typography } from "@mui/material";
 const Arlearning = () => {
     const scenarios = [
         {
             id: 1,
-            title: 'High Return Rates Due to Fit Issues',
+            title: 'Trendy Glasses Try on Filter',
             image: image1,
-            description: 'Current training lacks realistic,immersive scenarios, limiting hands-on experience and preparedness for real-world situations.',
+            
             url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
         },
         {
             id: 2,
-            title: 'Low User Engagement and Habitual Visits',
+            title: 'Grey Tennis Cap',
             image: image2,
-            description: 'Myntra struggles to maintain high user engagement andfrequent visits, especially among Gen Z. In a competitivemarket, it Trend. Swipe. Shop. Repeat',
-            url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
+            
+            url:"https://www.instagram.com/ar/466233219479972/?ch=YjQ5NDhhNTZmZmZhODY0NThkNTkxZGM3YTJlZjM5MGI%3D"
         },
         {
             id: 3,
-            title: 'Seamless and Integrated Shopping Experience',
+            title: ' Blue Swinging Counch',
             image: image3,
-            description: 'Effortless Shopping, Streamlined Journey, Boosted Conversions, Precision Fit, Confidence in Choices.',
+            
             url:"https://www.instagram.com/ar/1654809875352016/?ch=MWMxZDE1Y2M0OTQzZDkyMjFmOGY1ZmM0NGI1YTRkODc%3D"
         },
         // Add more scenarios as needed
@@ -34,13 +34,13 @@ const Arlearning = () => {
             <div>
                 <div className="bg-gray-100 p-8">
                     <div className="text-center mb-8">
-                        <h1 className="text-4xl font-bold text-pink-600">Instagram Filters</h1>
+                        <h1 className="text-6xl font-bold text-pink-600">Instagram Filters</h1>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-[0px] sm:ml-[20%]">
                         {scenarios.map((scenario) => (
-                            <div key={scenario.id} className="bg-white p-6 rounded-lg shadow-md">
-                                <img src={scenario.image} alt={scenario.title} className="w-full h-48 object-cover mb-4 rounded-md" />
+                            <div key={scenario.id} className="bg-pink-200 p-6 rounded-lg shadow-md">
+                                <img src={scenario.image} alt={scenario.title} className="w-full h-95 object-cover mb-4 rounded-md" />
                                 <h2 className="text-xl font-semibold mb-2">{scenario.title}</h2>
                                 <Typography component="a" href={scenario.url} target="_blank" rel="noopener noreferrer" sx={{ display: "block", color: "blue", wordWrap: "break-word", mb: 2 }}>
                                         {scenario.url}

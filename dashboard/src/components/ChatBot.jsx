@@ -65,12 +65,7 @@ function App() {
             },
           }}
         >
-          <Link
-            href="https://github.com/Vishesh-Pandey/chat-ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ textDecoration: "none" }}
-          >
+        
             <Typography
               variant="h4"
               component="div"
@@ -89,7 +84,7 @@ function App() {
                 }}
               />
             </Typography>
-          </Link>
+         
           <form onSubmit={generateAnswer}>
             <TextField
               required

@@ -1,8 +1,5 @@
 import Dashboard from "layouts/dashboard";
-import Billing from "layouts/billing";
 import Profile from "layouts/profile";
-import SignIn from "layouts/authentication/sign-in";
-import SignUp from "layouts/authentication/sign-up";
 import Icon from "@mui/material/Icon";
 import Signout from "components/Signout";
 import Evaluation from "components/Evaluation";
@@ -41,27 +38,28 @@ const routes = [
   // },
   {
     type: "collapse",
-    name: "#Accessorize",
-    key: "billing",
+    name: "#ARCloset",
+    key: "evaluation",
     icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/accessorize",
+    route: "/evaluation",
     component: <Evaluation />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "RTL",
-  //   key: "rtl",
-  //   icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-  //   route: "/rtl",
-  //   component: <RTL />,
-  // },
+  {
+    type: "collapse",
+    name: "#ShopLiveNow",
+    key: "virtualtryon",
+    icon: <Icon fontSize="small">VR</Icon>,
+    route: "/TryOn",
+    component: <TrackingPosture />,
+  },
+ 
   {
     type: "collapse",
     name: "#SwipetoStyle",
-    key: "evaluation",
+    key: "",
     icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/evaluation",
-    component: <Evaluation questions={questions} options={options} correctAnswers={correctAnswers} />,
+    route: "/",
+    
   },
   {
     type: "collapse",
@@ -79,23 +77,8 @@ const routes = [
     route: "/arlearning",
     component: <Arlearning />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Movement/Posture Tracking",
-  //   key: "opencv",
-  //   icon: <Icon fontSize="small">Tracking</Icon>,
-  //   route: "/trackpos",
-  //   component: <TrackingPosture />,
-  // },
 
-  {
-    type: "collapse",
-    name: "#ShopLiveNow",
-    key: "virtualtryon",
-    icon: <Icon fontSize="small">VR</Icon>,
-    route: "/TryOn",
-    component: <TrackingPosture />,
-  },
+  
   
   {
     type: "collapse",

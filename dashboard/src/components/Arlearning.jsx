@@ -7,7 +7,7 @@ import geig from "../assets/dior_bolso_saddle_con_bandolera_rojo.glb"
 import image1 from '../assets/Screenshot 2024-07-11 131845.png'
 import image2 from '../assets/Screenshot 2024-07-11 131901.png'
 import image3 from '../assets/Screenshot 2024-07-11 132048.png'
-import { Typography } from "@mui/material";
+
 const Arlearning = () => {
     const scenarios = [
         {
@@ -34,14 +34,14 @@ const Arlearning = () => {
         <div>
             <div>
                 <div className="bg-gray-100 p-8">
-                    <div className="text-center mb-8">
-                        <h1 className="text-4xl font-bold">Personalization, Categorization & Engagement</h1>
+                    <div className="text-center mb-8 ml-20">
+                        <h1 className="text-5xl font-bold text-pink-600">Personalization, Categorization & Engagement</h1>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-[0px] sm:ml-[20%]">
                         {scenarios.map((scenario) => (
                             <div key={scenario.id} className="bg-white p-6 rounded-lg shadow-md">
-                                <img src={scenario.image} alt={scenario.title} className="w-full h-48 object-cover mb-4 rounded-md" />
+                                <img src={scenario.image} alt={scenario.title} className="w-full h-60 object-cover mb-4 rounded-md" />
                                 <h2 className="text-xl font-semibold mb-2">{scenario.title}</h2>
                                 <p className="text-gray-600">{scenario.description}</p>
                             </div>
@@ -50,8 +50,8 @@ const Arlearning = () => {
                 </div>
             </div>
             <div className=" md:ml-[20%]">
-                <h1 className="mt-5 text-3xl text-center font-bold">
-                    <Typography variant="bold">AR TRY ONS Visualization</Typography>
+                <h1 className="mt-5 text-5xl text-center font-bold text-pink-600 ">
+                   AR TRY ONS Visualization
                 </h1>
                 <div className='flex md:flex-row flex-col flex-wrap '>
 
@@ -114,7 +114,7 @@ const Arlearning = () => {
                                     <ul className="list-disc pl-5 text-white">
                                         <li>Yellowself design fit & flare dress</li>
                                         <li>Short, flared sleeves. Above knee length in flared hem.</li>
-                                        <li>₹749 Price Details Maximum Retail PriceRs. 2499 (Incl. of all taxes) Discount70% OFF Selling PriceRs. 749 (Incl. of all taxes) MRP₹2499(70% OFF).</li>
+                                        <li>₹749 Price Details Maximum Retail PriceRs. 2499</li>
                                         <li>Coupon Discount: Rs. 141 off (check cart for final savings)</li>
                                     </ul>
                                 </div>
