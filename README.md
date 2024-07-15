@@ -1,4 +1,4 @@
-# website made by team ASTUTAS
+# Website made by team ASTUTAS
 
 To clone and run this project locally, follow these steps:
 
