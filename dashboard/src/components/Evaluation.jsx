@@ -34,7 +34,7 @@ const Arlearning = () => {
             <div>
                 <div className="bg-gray-100 p-8">
                     <div className="text-center mb-8">
-                        <h1 className="text-6xl font-bold text-pink-600">Instagram Filters</h1>
+                        <h1 className="text-6xl font-bold text-pink-600">Myntra Filters</h1>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-[0px] sm:ml-[20%]">
