@@ -6,7 +6,8 @@ import Evaluation from "components/Evaluation";
 import ChatBot from "components/ChatBot";
 import Arlearning from "components/Arlearning";
 import TrackingPosture from "components/TrackingPosture";
-
+import VirtualTryOn from "components/VirtualTryOn";
+import SwipeableVideos from "components/ReelSection";
 const questions = [
   'What type of clothes do you usually prefer?',
   
@@ -47,9 +48,10 @@ const routes = [
   {
     type: "collapse",
     name: "#ShopLiveNow",
-    key: "virtualtryon",
+    key: "VirtualTryOn",
     icon: <Icon fontSize="small">VR</Icon>,
-    route: "/TryOn",
+    route: "/VirtualTryOn",
+    component: <TrackingPosture />
     
   },
  
@@ -59,7 +61,7 @@ const routes = [
     key: "SwipeableVideos",
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/reels",
-    component: <TrackingPosture />
+    component: <SwipeableVideos />
     
   },
   {
