@@ -1,5 +1,16 @@
 # Website made by team ASTUTAS
 
+
+Features
+1. Shop at Your Comfort (Unreal Engine)
+Experience the in-store shopping vibe from your couch with Myntra's Unity World. Explore collections, see outfits in a virtual environment, and enjoy a seamless shopping experience without leaving home.
+
+2. AR Try-Ons (Model Viewer API)
+Wondering how an outfit will look on you? With Myntra's AR Try-Ons, see the fit and style instantly. Log into the Myntra dashboard, select your favorite apparel, and click 'View in AR' to try it on. No more guessing, no more returns—make confident purchases every time.
+
+3. Accessories Filters (AR Core Kit)
+Enhance your look with AR Accessories Filters. Whether it's a tennis cap for your game or trendy sunglasses for an outing, mix and match accessories to perfect your outfit. Try different accessories virtually and find the perfect combination for any occasion.
+
 To clone and run this project locally, follow these steps:
 
     Clone the Repository:
