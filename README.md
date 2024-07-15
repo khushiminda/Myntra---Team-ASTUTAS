@@ -11,6 +11,8 @@ Wondering how an outfit will look on you? With Myntra's AR Try-Ons, see the fit 
 3. Accessories Filters (AR Core Kit)
 Enhance your look with AR Accessories Filters. Whether it's a tennis cap for your game or trendy sunglasses for an outing, mix and match accessories to perfect your outfit. Try different accessories virtually and find the perfect combination for any occasion.
 
+4. Reels Section for Engagement
+Stay engaged with Myntra’s new Reels section, your daily dose of fashion inspiration, tips, and trends. Watch videos from top influencers, discover celebrity styles, and get inspired. With the 'Buy Me' option, shop directly from the reels for a seamless and interactive experience.
 To clone and run this project locally, follow these steps:
 
     Clone the Repository:
