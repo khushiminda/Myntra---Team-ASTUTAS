@@ -1,8 +1,7 @@
 import React from "react";
 
-const TrackingPosture = () => {
-  // Replace 'YOUR_TRACKING_APP_URL' with the actual URL of your posture tracking application
-  const trackingAppUrl = "YOUR_TRACKING_APP_URL";
+const VirtualWorld = () => {
+ 
 
   return (
 
@@ -19,4 +18,4 @@ const TrackingPosture = () => {
   );
 };
 
-export default TrackingPosture;
+export default VirtualWorld;
