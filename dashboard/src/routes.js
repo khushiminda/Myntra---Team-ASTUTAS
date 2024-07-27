@@ -1,24 +1,12 @@
-import Dashboard from "layouts/dashboard";
+import Dashboard from "components/Dashboard";
 import Profile from "layouts/profile";
 import Icon from "@mui/material/Icon";
 import Signout from "components/Signout";
 import Evaluation from "components/Evaluation";
 import ChatBot from "components/ChatBot";
 import Arlearning from "components/Arlearning";
-import TrackingPosture from "components/TrackingPosture";
-import VirtualTryOn from "components/VirtualTryOn";
 import SwipeableVideos from "components/ReelSection";
-const questions = [
-  'What type of clothes do you usually prefer?',
-  
-];
-
-const options = [
-  ['Casual Wear', 'Fancy Wear', 'Athleisure', 'Streetwear' , 'boho/chic', 'vintage/retro'],
- 
-];
-
-const correctAnswers = ['optionA', 'optionC', 'optionC', 'optionA', 'optionB', 'optionA'];
+import VirtualWorld from "components/TrackingPosture";
 
 const routes = [
   {
@@ -27,16 +15,8 @@ const routes = [
     key: "dashboard",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
-    component: <Dashboard />,
+    component: <Dashboard/>,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Tables",
-  //   key: "tables",
-  //   icon: <Icon fontSize="small">table_view</Icon>,
-  //   route: "/tables",
-  //   component: <Tables />,
-  // },
   {
     type: "collapse",
     name: "#ARCloset",
@@ -51,7 +31,7 @@ const routes = [
     key: "VirtualTryOn",
     icon: <Icon fontSize="small">VR</Icon>,
     route: "/VirtualTryOn",
-    component: <TrackingPosture />
+    component: <VirtualWorld />
     
   },
  
