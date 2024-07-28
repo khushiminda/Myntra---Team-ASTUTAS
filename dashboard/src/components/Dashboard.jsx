@@ -1,5 +1,5 @@
 import React from "react";
-import FullPageImage from "/home/gauri/test_wk/src/Myntra---Team-ASTUTAS/dashboard/src/assets/images/myntra.png"
+import FullPageImage from "../assets/mainphoto.png"
 
 const Dashboard = () => {
     return (
