@@ -7,6 +7,7 @@ import ChatBot from "components/ChatBot";
 import Arlearning from "components/Arlearning";
 import SwipeableVideos from "components/ReelSection";
 import VirtualWorld from "components/TrackingPosture";
+import ThreeDModelVisualizer from "components/ThreeDModelVisualizer";
 
 const routes = [
   {
@@ -50,7 +51,8 @@ const routes = [
     key: "chatbot",
     icon: <Icon fontSize="small">VR training</Icon>,
     route: "/chatbot",
-    component: <ChatBot />,
+    // component: <ChatBot />,
+    component: <ThreeDModelVisualizer />,
   },
   {
     type: "collapse",
