@@ -13,8 +13,8 @@ const ThreeDModelVisualizer = () => {
   const [status, setStatus] = useState('');
   const [glbUrl, setGlbUrl] = useState('');
 
-  const apiKey = "msy_s2Je5Mdiz9NUcBE4x2RaBkDacmkNRD6IRESL";
-    // console.log(apiKey);
+  const apiKey = process.env.REACT_APP_MESHY_KEY;
+    console.log(apiKey);
   const convertTextTo3D = async () => {
     try {
       const response = await axios.post(

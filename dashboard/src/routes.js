@@ -3,7 +3,6 @@ import Profile from "layouts/profile";
 import Icon from "@mui/material/Icon";
 import Signout from "components/Signout";
 import Evaluation from "components/Evaluation";
-import ChatBot from "components/ChatBot";
 import Arlearning from "components/Arlearning";
 import SwipeableVideos from "components/ReelSection";
 import VirtualWorld from "components/TrackingPosture";
