@@ -1,4 +1,3 @@
-// 3DModelVisualizer.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../assets/3DModelVisualizer.css';
@@ -14,7 +13,7 @@ const ThreeDModelVisualizer = () => {
   const [glbUrl, setGlbUrl] = useState('');
 
   const apiKey = process.env.REACT_APP_MESHY_KEY;
-    console.log(apiKey);
+
   const convertTextTo3D = async () => {
     try {
       const response = await axios.post(
@@ -65,8 +64,8 @@ const ThreeDModelVisualizer = () => {
   }, [taskId, apiKey]);
 
   return (
-    <div className="container">
-      <h1>3D Model Visualizer</h1>
+    <div className="container bg-pink-50">
+      <h1 className='text-4xl font-bold'>3D Model Visualizer</h1>
       <div className="form-group">
         <label>Mode:</label>
         <select value={mode} onChange={(e) => setMode(e.target.value)}>
@@ -90,14 +89,13 @@ const ThreeDModelVisualizer = () => {
         <label>Negative Prompt:</label>
         <input type="text" value={negativePrompt} onChange={(e) => setNegativePrompt(e.target.value)} />
       </div>
-      <button onClick={convertTextTo3D}>Convert Text to 3D</button>
+      <button className='bg-pink-400 rounded' onClick={convertTextTo3D}>Convert Text to 3D</button>
 
       {taskId && (
         <div>
-          <p>Task ID: {taskId}</p>
           {status === 'SUCCEEDED' && progress === 100 ? (
-            <a href={glbUrl} download>
-              Download GLB file
+            <a className="text-blue" href={glbUrl} download>
+              <h1>Download GLB file</h1>
             </a>
           ) : (
             <div>

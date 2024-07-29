@@ -1,7 +1,7 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
-import { Button, Box, Typography } from '@mui/material';
+import { Button, Box } from '@mui/material';
 
 const videos = [
   {
