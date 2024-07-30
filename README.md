@@ -32,5 +32,12 @@ Build for Production: To create a production build of the application, run:
 
     npm run build
 
+References:
+https://youtu.be/cfKzUYH4i7A
+https://github.com/Unity-Technologies/arfoundation-samples
+https://www.blender.org/
+
+
+
 
 
