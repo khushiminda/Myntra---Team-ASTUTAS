@@ -1,4 +1,5 @@
 # Website made by team ASTUTAS!
+![screenchot](https://github.com/khushiminda/Myntra---Team-ASTUTAS/blob/main/Screenshot%202024-07-27%20223931.png)
 
 
 
