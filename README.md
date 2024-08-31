@@ -25,7 +25,7 @@ Enhance your look with AR Accessories Filters. Whether it's a tennis cap for you
 Stay engaged with Myntra’s new Reels section, your daily dose of fashion inspiration, tips, and trends. Watch videos from top influencers, discover celebrity styles, and get inspired. With the 'Buy Me' option, shop directly from the reels for a seamless and interactive experience.
 To clone and run this project locally, follow these steps
 
-Clone the Repository:
+Clone the Repository: 
 
     git clone https://github.com/khushiminda/Myntra---Team-ASTUTAS.git
 
