@@ -35,6 +35,9 @@ Install Dependencies: Ensure you have Node.js and npm installed. Run the followi
 
 Start the Development Server: To start the development server and view the application locally, use:
 
+
+
+
     npm start
 
 Build for Production: To create a production build of the application, run:
